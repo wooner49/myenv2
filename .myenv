@@ -1,0 +1,22 @@
+export LC_ALL=en_US.UTF-8
+export CLICOLOR=1
+
+# list aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lk='ls -lSr'      # sort by size, biggest last.
+alias lr='ls -ltr'      # sort by date, most recent last.
+alias lc='ls -ltcr'     # sort by/show change time, most recent last.
+alias lld="ls -alF | grep --color=auto '^d'"    # list only directories
+
+# always enable colored 'grep' output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# alias cdenv='cd ~/.myenv;'
+# alias vienv='vi ~/.myenv/wooner.zsh;'
+# alias renv='source ~/.zshrc'
+
+alias cfg='`which git` --git-dir=$HOME/.cfg/ --work-tree=$HOME'

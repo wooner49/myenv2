@@ -1,0 +1,15 @@
+[user]
+	name = wooner49
+	email = wooner49@gmail.com
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+[credential]
+    helper = osxkeychain
+[alias]
+    b = branch
+    br = branch -r
+    ba = branch -a
+    bv = branch -v
+    co = checkout
+    st = status
