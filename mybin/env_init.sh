@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "--------------- Start Configuration ----------------"
+echo "ENVIRONMENT AUTO SETTING START!!!!!"
 
 RC_PATH=$HOME/.zshrc
 PP=`grep 'source $HOME/.myenv' $RC_PATH`
@@ -14,4 +14,4 @@ cfg submodule update
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ~/.tmux/.tmux.conf.local .
 
-echo "--------------- Finish Configuration ---------------"
+echo "ENVIRONMENT AUTO SETTING FINISH!!!!!"
