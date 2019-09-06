@@ -12,6 +12,6 @@ cfg submodule init
 cfg submodule update
 
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
-cp ~/.tmux/.tmux.conf.local .
+#cp ~/.tmux/.tmux.conf.local .
 
 echo "ENVIRONMENT AUTO SETTING FINISH!!!!!"

@@ -52,5 +52,6 @@ if has("autocmd")
     augroup configurations
         autocmd BufRead,BufNewFile *aliases set filetype=sh
         autocmd BufRead,BufNewFile *env set filetype=sh
+        autocmd BufRead,BufNewFile *tmux* set filetype=sh
     augroup END
 endif
