@@ -1,6 +1,6 @@
 set nocompatible
 filetype plugin indent on
-set runtimepath+=~/.myenv/.vim
+set runtimepath+=~/.vim
 
 " ==================== General Setting ====================
 syntax on           " Enable syntax highlighting
