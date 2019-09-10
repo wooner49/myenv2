@@ -1,10 +1,9 @@
 #!/bin/bash
 echo "ENVIRONMENT AUTO SETTING START!!!!!"
 
-RC_PATH=$HOME/.zshrc
+RC_PATH=$HOME/.bashrc
 PP=`grep 'source $HOME/.myenv' $RC_PATH`
 [ ! -z "$PP" ] && echo ".myenv is already registered." || echo 'source $HOME/.myenv' >> $RC_PATH
-
 source $RC_PATH
 
 cd $HOME
