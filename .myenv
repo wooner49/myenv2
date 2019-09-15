@@ -1,6 +1,9 @@
 export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
 
+# Init jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
 # list aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -17,7 +20,7 @@ alias egrep='egrep --color=auto'
 
 # alias cdenv='cd ~/.myenv;'
 # alias vienv='vi ~/.myenv/wooner.zsh;'
-# alias renv='source ~/.zshrc'
+alias rcfg='. ~/.bashrc'
 
 alias cfg='`which git` --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias golab='ssh dongjin@143.248.230.55 -p9090'
