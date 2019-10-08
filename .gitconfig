@@ -1,9 +1,9 @@
 [user]
-	name = wooner49
-	email = wooner49@gmail.com
+    name = wooner49
+    email = wooner49@gmail.com
 [core]
     editor = vim
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.cfg/.gitignore
 [credential]
     helper = osxkeychain
 [alias]
