@@ -4,8 +4,8 @@
 [core]
     editor = vim
     excludesfile = ~/.cfg/.gitignore
-[credential]
-    helper = osxkeychain
+#[credential]
+#    helper = osxkeychain
 [alias]
     b = branch
     br = branch -r
