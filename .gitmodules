@@ -1,3 +1,0 @@
-[submodule ".tmux"]
-	path = .tmux
-	url = https://github.com/wooner49/.tmux.git

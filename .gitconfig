@@ -3,7 +3,7 @@
     email = wooner49@gmail.com
 [core]
     editor = vim
-    excludesfile = ~/.cfg/.gitignore
+    excludesfile = ~/.gitignore
 #[credential]
 #    helper = osxkeychain
 [alias]
