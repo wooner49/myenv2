@@ -1,16 +1,8 @@
 export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
 
-if [ -d "$HOME/.cfg/bin" ]; then
-    PATH="$HOME/.cfg/bin:$PATH"
-fi
-
-if [ -d "$HOME/Tools/spark-2.3.1" ]; then
-    PATH="$HOME/Tools/spark-2.3.1/bin:$PATH"
-fi
-
 # list aliases
-alias ll='ls -alF'
+alias ll='ls -alvF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lk='ls -lSr'      # sort by size, biggest last.
