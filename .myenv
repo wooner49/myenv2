@@ -1,5 +1,6 @@
 export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
+ulimit -c unlimited
 
 # list aliases
 alias ll='ls -alvF'
@@ -15,28 +16,50 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# macro
+extract() {
+    if [ -f $1 ]; then
+        case $1 in
+            *.tar.bz2)   tar xvjf $1    ;;
+            *.tar.gz)    tar xvzf $1    ;;
+            *.bz2)       bunzip2 $1     ;;
+            *.rar)       rar x $1       ;;
+            *.gz)        gunzip $1      ;;
+            *.tar)       tar xvf $1     ;;
+            *.tbz2)      tar xvjf $1    ;;
+            *.tgz)       tar xvzf $1    ;;
+            *.zip)       unzip $1       ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1        ;;
+            *)           echo "don't know how to extract '$1'..." ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}
+
 # configuration
 REPO_DIR=""
 RC_FILE=""
+RESEARCH_DIR=""
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     umask 022
     REPO_DIR=$HOME/Repo
     RC_FILE=$HOME/.bashrc
-elif [[ "$OSTYPE" == "darwin" ]]; then
+elif [[ "$OSTYPE" == "darwin"* ]]; then
     umask 022
     REPO_DIR=$HOME/Repo
     RC_FILE=$HOME/.zshrc
+    RESEARCH_DIR=$HOME/Research
 fi
 
 alias cdenv='cd $REPO_DIR/.cfg'
 alias vienv='vi $REPO_DIR/.cfg/.myenv'
 alias renv='source $RC_FILE'
-#alias cfg='`which git` --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias golab='ssh dongjin@143.248.230.55 -p9090'
 alias gogpu='ssh user@143.248.230.166'
 
-RESEARCH_DIR=$HOME/Research
 alias gods='cd $RESEARCH_DIR/datasets'
 
 # init jenv
