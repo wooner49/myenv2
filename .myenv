@@ -53,6 +53,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     RESEARCH_DIR=$HOME/Research
 fi
 
+# aliases
 alias cdenv='cd $REPO_DIR/.cfg'
 alias vienv='vi $REPO_DIR/.cfg/.myenv'
 alias renv='source $RC_FILE'
@@ -61,6 +62,13 @@ alias golab='ssh dongjin@143.248.230.55 -p9090'
 alias gogpu='ssh user@143.248.230.166'
 
 alias gods='cd $RESEARCH_DIR/datasets'
+
+# git aliases
+alias gst='git status'
+alias gba='git branch -a'
+
+
+
 
 # init jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
