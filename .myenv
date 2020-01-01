@@ -62,13 +62,11 @@ alias golab='ssh dongjin@143.248.230.55 -p9090'
 alias gogpu='ssh user@143.248.230.166'
 
 alias gods='cd $RESEARCH_DIR/datasets'
+alias gomt='cd $HOME/Documents/MATLAB'
 
 # git aliases
 alias gst='git status'
 alias gba='git branch -a'
-
-
-
 
 # init jenv
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
