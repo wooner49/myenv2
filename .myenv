@@ -54,8 +54,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # aliases
-alias cdenv='cd $REPO_DIR/.cfg'
-alias vienv='vi $REPO_DIR/.cfg/.myenv'
+alias cdenv='cd $REPO_DIR/myenv'
+alias vienv='vi $REPO_DIR/myenv/.myenv'
 alias renv='source $RC_FILE'
 
 alias golab='ssh dongjin@143.248.230.55 -p9090'
