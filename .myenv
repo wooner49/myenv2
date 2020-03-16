@@ -42,15 +42,27 @@ extract() {
 REPO_DIR=""
 RC_FILE=""
 RESEARCH_DIR=""
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    # for wsl
     umask 022
     REPO_DIR=$HOME/Repo
     RC_FILE=$HOME/.bashrc
+
 elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # for mac
     umask 022
     REPO_DIR=$HOME/Repo
     RC_FILE=$HOME/.zshrc
     RESEARCH_DIR=$HOME/Research
+
+    # use jenv to switch java version.
+    export PATH=$HOME/.jenv/bin:$PATH
+
+    if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+    alias cj8='jenv global 1.8; java -version;'
+    alias cj11='jenv global 11.0; java -version;'
 fi
 
 # aliases
@@ -67,9 +79,6 @@ alias gomt='cd $HOME/Documents/MATLAB'
 # git aliases
 alias gst='git status'
 alias gba='git branch -a'
-
-# init jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 
 if [[ "$HOSTNAME" == "lab" ]]; then
