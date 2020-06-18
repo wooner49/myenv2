@@ -46,35 +46,39 @@ RESEARCH_DIR=""
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # for wsl
     umask 022
+
     REPO_DIR=$HOME/Repo
     RC_FILE=$HOME/.bashrc
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # for mac
     umask 022
-    REPO_DIR=$HOME/Repo
-    RC_FILE=$HOME/.zshrc
-    RESEARCH_DIR=$HOME/Research
+
+    REPO_DIR=~/repo
+    RC_FILE=~/.zshrc
+    RESEARCH_DIR=~/research
 
     # use jenv to switch java version.
-    export PATH=$HOME/.jenv/bin:$PATH
+    export PATH=~/.jenv/bin:$PATH
 
     if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
     alias cj8='jenv global 1.8; java -version;'
     alias cj11='jenv global 11.0; java -version;'
+
+    alias cdenv='cd $REPO_DIR/myenv'
+    alias vienv='vi $REPO_DIR/myenv/.myenv'
+    alias renv='source $RC_FILE'
+
+    alias golab='ssh dongjin@143.248.230.55 -p9090'
+    alias gogpu='ssh user@143.248.230.166'
+
+    alias gomat='cd ~/Documents/MATLAB'
+    alias gorepo='cd $REPO_DIR'
+    alias gore='cd $RESEARCH_DIR'
+
 fi
 
-# aliases
-alias cdenv='cd $REPO_DIR/myenv'
-alias vienv='vi $REPO_DIR/myenv/.myenv'
-alias renv='source $RC_FILE'
-
-alias golab='ssh dongjin@143.248.230.55 -p9090'
-alias gogpu='ssh user@143.248.230.166'
-
-alias gods='cd $RESEARCH_DIR/datasets'
-alias gomt='cd $HOME/Documents/MATLAB'
 
 # git aliases
 alias gst='git status'

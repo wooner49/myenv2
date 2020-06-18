@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="`pwd`/.."
+DIR="`pwd`"
 ln -s -f $DIR/.vimrc ~/.vimrc 
 ln -s -f $DIR/.gitconfig ~/.gitconfig
 ln -s -f $DIR/.gitignore ~/.gitignore 
