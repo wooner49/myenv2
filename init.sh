@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/zsh
+git submodule init
+git submodule update
 
 DIR="`pwd`"
 ln -s -f $DIR/.vimrc ~/.vimrc 
