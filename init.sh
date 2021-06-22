@@ -12,13 +12,3 @@ ln -s -f $DIR/.myenv ~/.myenv
 
 STR="if [ -f ~/.myenv ]; then source ~/.myenv; fi"
 echo $STR >> ~/.zshrc
-
-#case "$OSTYPE" in
-#    linux*)
-#        echo $STR >> ~/.zshrc
-#        ;;
-#    darwin*)
-#        echo $STR >> ~/.zshrc
-#        ;;
-#    *) ;;
-#esac
