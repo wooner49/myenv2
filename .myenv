@@ -36,6 +36,10 @@ LAB_PORT='22'
 
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
 
+# project aliases
+alias goattack='cd ~/repo/myAttack/; conda activate myattack;'
+
+
 # macro
 extract() {
     if [ -f $1 ]; then
