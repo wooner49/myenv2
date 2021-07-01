@@ -32,7 +32,7 @@ alias gba='git branch -a'
 
 # server setting
 LAB_IP='137.68.195.94'
-LAB_PORT='22'
+LAB_PORT='55555'
 
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
 
