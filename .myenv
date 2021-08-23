@@ -39,7 +39,7 @@ alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
 # project aliases
 alias goattack='cd ~/repo/myAttack/; conda activate myattack;'
 alias goarbiterr='cd ~/repo/arbiter-research; conda activate arbiter'
-alias gogol='cd ~/project/golden; conda activate golden'
+alias goarb='cd ~/project/arbiter; conda activate arbiter'
 
 # macro
 extract() {
