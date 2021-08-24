@@ -34,9 +34,13 @@ alias gba='git branch -a'
 LAB_IP='137.68.195.94'
 LAB_PORT='55555'
 
+AESPA='aespa.dmlab.kaist.ac.kr'
+EXO='exo.dmlab.kaist.ac.kr'
+
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
-alias goaespa='ssh wooner49@aespa.dmlab.kaist.ac.kr'
-alias goexo='ssh wooner49@exo.dmlab.kaist.ac.kr'
+alias goaespa='ssh wooner49@$AESPA'
+alias goaespac='ssh wooner49@$AESPA -p49197'
+alias goexo='ssh wooner49@$EXO'
 
 # project aliases
 alias goattack='cd ~/repo/myAttack/; conda activate myattack;'
