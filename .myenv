@@ -34,8 +34,12 @@ alias gba='git branch -a'
 LAB_IP='137.68.195.94'
 LAB_PORT='55555'
 
-AESPA='aespa.dmlab.kaist.ac.kr'
+TWICE='twice.dmlab.kaist.ac.kr'
+ITZY='itzy.dmlab.kaist.ac.kr'
+IU='iu.dmlab.kaist.ac.kr'
 EXO='exo.dmlab.kaist.ac.kr'
+BTS='bts.dmlab.kaist.ac.kr'
+AESPA='aespa.dmlab.kaist.ac.kr'
 
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
 alias goaespa='ssh wooner49@$AESPA'
