@@ -6,6 +6,7 @@
     excludesfile = ~/.gitignore
 [credential]
     helper = osxkeychain
+    helper = store
 [alias]
     b = branch
     br = branch -r
