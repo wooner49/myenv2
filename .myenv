@@ -35,6 +35,8 @@ LAB_IP='137.68.195.94'
 LAB_PORT='55555'
 
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
+alias goaespa='ssh wooner49@aespa.dmlab.kaist.ac.kr'
+alias goexo='ssh wooner49@exo.dmlab.kaist.ac.kr'
 
 # project aliases
 alias goattack='cd ~/repo/myAttack/; conda activate myattack;'
