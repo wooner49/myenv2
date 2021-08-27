@@ -28,6 +28,8 @@ set ignorecase      " Ignore case
 set smartcase       " Unless we type a capital
 set backspace=indent,eol,start    " Enable backspace in insert mode
 
+set noerrorbells    " Disable beep sound
+
 " ==================== Indentation ====================
 " By default, the indent is 4 spaces.
 set tabstop=4
