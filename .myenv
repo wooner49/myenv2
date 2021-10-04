@@ -46,6 +46,8 @@ alias goaespa='ssh wooner49@$AESPA'
 alias goaespac='ssh wooner49@$AESPA -p49186'
 alias goexo='ssh wooner49@$EXO'
 alias gobts='ssh wooner49@$BTS'
+alias gobtsc='ssh wooner49@$BTS -p49184'
+
 
 # project aliases
 alias goattack='cd ~/repo/myAttack/; conda activate myattack;'
