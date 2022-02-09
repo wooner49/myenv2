@@ -20,10 +20,10 @@ alias egrep='egrep --color=auto'
 
 # custom aliases
 RC_FILE=~/.zshrc
-REPO_DIR=$HOME/repo
+REPO_DIR=$HOME/project
 
-alias cdenv='cd $REPO_DIR/myEnv'
-alias vienv='vi $REPO_DIR/myEnv/.myenv'
+alias cdenv='cd $REPO_DIR/my-env'
+alias vienv='vi $REPO_DIR/my-env/.myenv'
 alias renv='source $RC_FILE'
 
 # git aliases
@@ -43,10 +43,8 @@ AESPA='aespa.dmlab.kaist.ac.kr'
 
 alias golab='ssh dongjin@$LAB_IP -p$LAB_PORT'
 alias goaespa='ssh wooner49@$AESPA'
-alias goaespac='ssh wooner49@$AESPA -p49186'
 alias goexo='ssh wooner49@$EXO'
 alias gobts='ssh wooner49@$BTS'
-alias gobtsc='ssh wooner49@$BTS -p49188'
 
 
 # project aliases
